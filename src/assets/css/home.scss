@@ -1,0 +1,260 @@
+.section-slide {
+    padding: 0;
+    .section-slide-content {
+        background-color: #fafafa;
+    }
+    .en-container.full {
+        padding: 0 50px;
+    }
+    .carousel-caption {
+        right: 50%;
+        left: 15%;
+        z-index: 10;
+        color: #fff;
+        text-align: left;
+        background: rgba(#000, 0.5);
+        top: 15%;
+        padding: 64px 32px;
+        height: 356px;
+        border-radius: 4px;
+        .title {
+            font-size: 38px;
+            font-weight: 400;
+        }
+        .title-desc {
+            font-size: 18px;
+        }
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    background-color: #333;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    &:after {
+        font-family: 'Material Icons';
+        content: 'keyboard_arrow_right';
+        font-size: 28px;
+        color: #fff;
+        position: relative;
+        top: 4px;
+    }
+}
+
+.carousel-control-prev-icon {
+    &:after {
+        content: 'keyboard_arrow_left'
+    }
+}
+
+.carousel-inner {
+    .item {
+        width: 100%;
+        height: 650px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.home-course {
+    .en-container.full {
+        padding: 0 50px;
+    }
+}
+
+.c-section {
+    background-color: #f4f4f4;
+    .section-title {
+        .h-title {
+            color: #fff;
+        }
+        .s-title-desc {
+            color: rgba(#fff, 0.9);
+        }
+    }
+}
+
+.sc-section {
+    background-color: #f4f4f4;
+}
+
+.course-box {
+    background-color: #fafafa;
+    padding: 0;
+}
+
+.img-block {
+    img {
+        width: 100%;
+    }
+}
+
+.scroll-to-bottom {
+    padding: 0 50px;
+    height: 0;
+    .scroll-btn {
+        background-color: #fff;
+        position: relative;
+        top: -25px;
+        left: 25px;
+        border-radius: 50%;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        height: 50px;
+        width: 50px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #333;
+    }
+}
+
+.see-all-c {
+    color: #4285F4;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 32px;
+    display: inline-block;
+}
+
+// /////////////
+.course-box figure {
+    position: relative;
+    overflow: hidden;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.course-box figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.course-box figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.course-box figure figcaption::before,
+.course-box figure figcaption::after {
+    pointer-events: none;
+}
+
+.course-box figure figcaption,
+.course-box figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Anchor will cover the whole item by default */
+
+
+/* For some effects it will show as a button */
+
+.course-box figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.course-box figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    font-size: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.course-box figure h2 span {
+    font-weight: 800;
+}
+
+.course-box figure h2,
+.course-box figure p {
+    margin: 0;
+    text-transform: initial;
+}
+
+.course-box figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+// milo
+figure.effect-milo {
+    background: #2e5d5a;
+}
+
+figure.effect-milo img {
+    max-width: none;
+    width: -webkit-calc(100% + 60px);
+    width: calc(100% + 60px);
+    opacity: 1;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-30px, 0, 0) scale(1.12);
+    transform: translate3d(-30px, 0, 0) scale(1.12);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.effect-milo:hover img {
+    opacity: 0.5;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+figure.effect-milo h2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1em 1.2em;
+    left: 0;
+    background-color: #fff;
+    color: #888B8D;
+}
+
+figure.effect-milo p {
+    padding: 0 10px 0 0;
+    width: 50%;
+    border-right: 1px solid #fff;
+    text-align: right;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+}
+
+figure.effect-milo:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}

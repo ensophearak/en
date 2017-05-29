@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/swiper/dist/css/swiper.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './assets/css/variable.scss';
+@import './assets/css/font.scss';
+@import './assets/css/keyframes.scss';
+@import './assets/css/grid.scss';
+@import './assets/css/button.scss';
+@import './assets/css/global.scss';
+@import './assets/css/header.scss';
+@import './assets/css/home.scss';

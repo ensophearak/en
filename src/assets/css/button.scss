@@ -1,0 +1,161 @@
+/****** buttons' style starts here ******/
+
+.button {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: inherit;
+    border: 3px solid;
+    padding: 12px 32px;
+    text-transform: uppercase;
+    &:hover {
+        -webkit-transition: 200ms ease-in;
+        -moz-transition: 200ms ease-in;
+        -o-transition: 200ms ease-in;
+        transition: 200ms ease-in;
+    }
+}
+
+
+/****** blue buttons ******/
+
+.button1 {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(52, 168, 200);
+    /* #34a8c8 */
+    color: rgb(52, 168, 200);
+    &:hover {
+        border: 3px solid rgba(52, 168, 200, 0.7);
+        color: rgba(52, 168, 200, 0.7);
+    }
+}
+
+.button2 {
+    background-color: rgb(52, 168, 200);
+    border-color: rgb(52, 168, 200);
+    color: rgb(255, 255, 255);
+    &:hover {
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgb(52, 168, 200);
+        color: rgb(52, 168, 200);
+    }
+}
+
+.button3 {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(52, 168, 200);
+    color: rgb(52, 168, 200);
+    &:hover {
+        background-color: rgb(52, 168, 200);
+        border-color: rgb(52, 168, 200);
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+/****** green buttons ******/
+
+.button4 {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(124, 191, 66);
+    /* #7cbf42 */
+    color: rgb(124, 191, 66);
+    &:hover {
+        border: 3px solid rgba(124, 191, 66, 0.7);
+        color: rgba(124, 191, 66, 0.7);
+    }
+}
+
+.button5 {
+    background-color: rgb(124, 191, 66);
+    border-color: rgb(124, 191, 66);
+    color: rgb(255, 255, 255);
+    &:hover {
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgb(124, 191, 66);
+        color: rgb(124, 191, 66);
+    }
+}
+
+.button6 {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(124, 191, 66);
+    color: rgb(124, 191, 66);
+    &:hover {
+        background-color: rgb(124, 191, 66);
+        border-color: rgb(124, 191, 66);
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+/******  red buttons ******/
+
+.button7 {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(226, 65, 62);
+    /* #e2413e */
+    color: rgb(226, 65, 62);
+    &:hover {
+        border: 3px solid rgba(226, 65, 62, 0.8);
+        color: rgba(226, 65, 62, 0.8);
+    }
+}
+
+.button8 {
+    background-color: rgb(226, 65, 62);
+    border-color: rgb(226, 65, 62);
+    color: rgb(255, 255, 255);
+    &:hover {
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgb(226, 65, 62);
+        color: rgb(226, 65, 62);
+    }
+}
+
+.button9 {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(226, 65, 62);
+    color: rgb(226, 65, 62);
+    &:hover {
+        background-color: rgb(226, 65, 62);
+        border-color: rgb(226, 65, 62);
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+/******  grey buttons ******/
+
+.button10 {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(149, 165, 166);
+    /* #95a5a6 */
+    color: rgb(149, 165, 166);
+    &:hover {
+        border: 3px solid rgba(149, 165, 166, 0.8);
+        color: rgba(149, 165, 166, 0.8);
+    }
+}
+
+.button11 {
+    background-color: rgb(149, 165, 166);
+    border-color: rgb(149, 165, 166);
+    color: rgb(255, 255, 255);
+    &:hover {
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgb(149, 165, 166);
+        color: rgb(149, 165, 166);
+    }
+}
+
+.button12 {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(149, 165, 166);
+    color: rgb(149, 165, 166);
+    &:hover {
+        background-color: rgb(149, 165, 166);
+        border-color: rgb(149, 165, 166);
+        color: rgb(255, 255, 255);
+    }
+}
