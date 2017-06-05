@@ -2,9 +2,14 @@
     padding: 0;
     .section-slide-content {
         background-color: #fafafa;
+        min-height: 650px;
+        swiper {
+            width: 100%;
+            height: 650px;
+        }
     }
     .en-container.full {
-        padding: 0 50px;
+        padding: 0;
     }
     .carousel-caption {
         right: 50%;
@@ -70,7 +75,7 @@
 }
 
 .c-section {
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     .section-title {
         .h-title {
             color: #fff;
@@ -82,12 +87,52 @@
 }
 
 .sc-section {
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
 }
 
 .course-box {
-    background-color: #fafafa;
+    background-color: #fff;
     padding: 0;
+    margin-bottom: 64px;
+    border: 1px solid #ebebeb;
+    -webkit-transition: box-shadow 0.5s, background-color 0.5s;
+    transition: box-shadow 0.5s, background-color 0.5s;
+    .course-img {
+        padding: 0 24px;
+        background-color: transparent;
+        margin-top: 24px;
+        img {
+            opacity: 1;
+        }
+    }
+    .course-text {
+        padding: 0 24px;
+        background-color: transparent;
+    }
+    .course-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #424242;
+        text-transform: capitalize;
+    }
+    .course-desc {
+        font-size: 14px;
+        font-weight: 500;
+        color: #555;
+    }
+    &:hover {
+        background-color: #fafafa;
+        box-shadow: 0 2px 20px rgba(34, 30, 31, 0.4);
+    }
+    .learn-more {
+        padding: 8px 24px;
+        background-color: transparent;
+        border: 2px solid #4285F4;
+        display: inline-block;
+        margin-bottom: 64px;
+        margin-top: 24px;
+        text-transform: uppercase;
+    }
 }
 
 .img-block {
@@ -129,7 +174,9 @@
     display: inline-block;
 }
 
-// /////////////
+
+/* /////////////*/
+
 .course-box figure {
     position: relative;
     overflow: hidden;
@@ -207,18 +254,21 @@
     font-size: 68.5%;
 }
 
-// milo
+
+/* milo*/
+
 figure.effect-milo {
     background: #2e5d5a;
 }
 
 figure.effect-milo img {
     max-width: none;
-    width: -webkit-calc(100% + 60px);
     width: calc(100% + 60px);
     opacity: 1;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
     -webkit-transform: translate3d(-30px, 0, 0) scale(1.12);
     transform: translate3d(-30px, 0, 0) scale(1.12);
     -webkit-backface-visibility: hidden;
@@ -248,7 +298,9 @@ figure.effect-milo p {
     text-align: right;
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
     -webkit-transform: translate3d(-40px, 0, 0);
     transform: translate3d(-40px, 0, 0);
 }

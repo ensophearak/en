@@ -23,10 +23,30 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background-color: #fafafa;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.block-title {
+    text-align: left;
+    .f-title {
+        color: #333;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .s-title {
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+
+.bar-contact {
+    border-bottom: 1px solid #ebebeb;
+    line-height: 44px;
+    background-color: #1726C6;
 }
 
 .app-search-wrapper {
@@ -82,7 +102,7 @@
 }
 
 .en-navigation {
-    background-color: #1726c6;
+    background-color: #1726C6;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,9 +127,8 @@
         width: 100%;
         z-index: 1111;
         margin: 0 auto;
-        max-width: 1440px;
-        -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-        box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+        /* max-width: 1440px;*/
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -127,19 +146,21 @@
         display: inline-flex;
         border-bottom: 2px solid transparent;
         padding: 8px 0;
-        a {
+        >a {
             padding: 0 24px;
             color: #fff;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            position: relative;
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-            font-size: 14px;
+            font-size: 22px;
+            text-transform: capitalize;
+            position: initial;
             letter-spacing: 0.35px;
-            font-weight: 400;
+            font-weight: 700;
+            font-family: 'Roboto Slab';
             i {
                 position: relative;
                 color: #fff;
@@ -154,5 +175,29 @@
             color: #fff;
             padding: 8px 24px;
         }
+    }
+}
+
+
+/* Show dropdown on click (active class set). */
+
+.dropdown.active>.dropdown-menu {
+    display: initial;
+}
+
+
+/* Hide dropdown by default */
+
+ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    margin-top: -1px;
+    color: #333;
+    padding: 50px;
+    li a {
+        color: #333;
     }
 }

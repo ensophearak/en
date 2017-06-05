@@ -15,6 +15,8 @@ import { LoginComponent } from './login/login.component';
 
 
 import { SwiperModule } from 'angular2-useful-swiper';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { DropdownDirective } from './dropdown.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { SwiperModule } from 'angular2-useful-swiper';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    LoginComponent
+    LoginComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
@@ -32,8 +35,11 @@ import { SwiperModule } from 'angular2-useful-swiper';
     NoopAnimationsModule,
     MaterialModule,
     CarouselModule.forRoot(),
-    SwiperModule
+    SwiperModule,
+    BsDropdownModule.forRoot()
+    
   ],
+   exports: [DropdownDirective],
   providers: [],
   bootstrap: [AppComponent]
 })
